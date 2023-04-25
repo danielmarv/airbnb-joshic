@@ -5,7 +5,7 @@ import Search from "./Search";
 import UserMenu from "./UserMenu"
 const Navbar = () => {
     return (
-        <div className="fixed -full bg-white z-10 shadow-sm">
+        <div className="fixed w-full bg-white z-10 shadow-sm">
             <div
                 className="
                     py-4
