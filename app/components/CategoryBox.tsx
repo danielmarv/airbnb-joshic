@@ -1,7 +1,6 @@
 'use client';
 
-import { useSearchParams } from "next/navigation";
-import { useRouter } from "next/router";
+import { useRouter, useSearchParams } from "next/navigation";
 import { useCallback } from "react";
 import { IconType } from "react-icons";
 import qs from "query-string";
@@ -18,6 +17,7 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
     selected
 }) => {
     const router = useRouter();
+
     const params = useSearchParams();
 
     const handleClick = useCallback (() => {
