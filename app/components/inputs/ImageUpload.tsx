@@ -20,7 +20,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
     value
 }) => {
     const handleUpload = useCallback((result: any) => {
-        onChange(result.info.secure_url)
+        onChange(result.info.secure_url);
     }, [onChange]);
     return (
         <CldUploadWidget
